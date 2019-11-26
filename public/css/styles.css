@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto&display=swap');
+
+/* 
+*** Reset CSS ***
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+html {
+  font-family: 'Montserrat',
+    sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0 auto;
+  /* width: 60vw; */
+}
+
+/* 
+*** Header / Navbar ***
+*/
+
+/* 
+#home {
+  display: grid;
+
+} */
+
+.navbar-container {
+  z-index: 999;
+  display: grid;
+  grid-template-columns: 30px 25vw 1fr 30px;
+  background-color: rgba(255, 255, 255, 0.596);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px 0 10px 0;
+  position: fixed;
+  width: 100vw;
+  margin: 0;
+}
+
+.navbar-container img {
+  width: 15vw;
+  margin: 0 auto;
+  display: block;
+}
+
+.navbar-container ul {
+  /* justify-content: end; */
+  text-align: right;
+}
+
+.navbar-container a {
+
+  color: rgb(83, 83, 83);
+  /* padding: 0 10px; */
+  grid-column-start: 2;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.navbar-container a:hover,
+.navbar-container a:focus {
+  color: black;
+}
+
+
+.navbar-container ul {
+  grid-column-start: 3;
+
+}
+
+.navbar-container li {
+  list-style: none;
+  display: inline;
+  padding: 15px;
+}
+
+.navbar-container input {
+  border-top: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-color: #E6C7C5;
+  font-size: 0.8rem;
+}
+
+.home-hero {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* align-content: center; */
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 3fr; */
+}
+
+.home-hero img {
+  object-fit: cover;
+  width: 50vw;
+  height: 100vh;
+}
+
+.home-hero h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: rgb(230, 184, 180);
+}
+
+.welcome-banner {
+  padding: 0 50px 0 50px;
+  display: grid;
+  grid-template-rows: 1fr 50px 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-banner p {
+  font-family: 'Roboto',
+    sans-serif;
+  color: rgb(119, 119, 119);
+
+}
+
+.welcome-banner h3 {
+  color: rgb(100, 100, 100);
+}
